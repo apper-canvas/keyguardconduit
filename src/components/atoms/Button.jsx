@@ -30,10 +30,10 @@ import React from 'react';
             whileHover={{ scale: (variant === 'ghost' || variant === 'text') ? 1.1 : 1.05 }}
             whileTap={{ scale: (variant === 'ghost' || variant === 'text') ? 0.9 : 0.95 }}
             onClick={onClick}
-            className={`${baseClasses} ${variantClasses} ${className}`}
+className={`${baseClasses} ${variantClasses} ${className}`}
             {...props}
           >
-            {IconComponent && &lt;IconComponent className="h-4 w-4" /&gt;}
+            {IconComponent && <IconComponent className="h-4 w-4" />}
             {children}
           </motion.button>
         );
