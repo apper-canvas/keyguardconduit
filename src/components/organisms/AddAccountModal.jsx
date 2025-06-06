@@ -48,10 +48,10 @@ import React, { useState } from 'react';
             {!showQRScanner && !showManualEntry ? (
               <AddAccountOptions 
                 onScanQR={() => setShowQRScanner(true)} 
-                onManualEntry={() => setShowManualEntry(true)} 
+onManualEntry={() => setShowManualEntry(true)} 
               />
             ) : showQRScanner ? (
-              &lt;&gt;
+              <>
                 <div className="flex items-center justify-between mb-6">
                   <Text type="h3" className="text-lg font-semibold text-surface-50">Scan QR Code</Text>
                   <Button
@@ -59,10 +59,9 @@ import React, { useState } from 'react';
                     className="p-2 hover:bg-surface-700 rounded-lg transition-colors"
                     variant="ghost"
                   >
-                    &lt;Icon name="X" className="h-5 w-5 text-surface-400" /&gt;
+                    <Icon name="X" className="h-5 w-5 text-surface-400" />
                   </Button>
                 </div>
-                
                 <div className="space-y-4">
                   <div className="aspect-square bg-surface-900 rounded-xl border-2 border-dashed border-surface-600 flex items-center justify-center">
                     <div className="text-center">
@@ -80,10 +79,10 @@ import React, { useState } from 'react';
                     className="w-full"
                     variant="text"
                   >
-                    Enter manually instead
+Enter manually instead
                   </Button>
                 </div>
-              &lt;/&gt;
+              </>
             ) : (
               <AccountForm 
                 editingAccount={editingAccount}
