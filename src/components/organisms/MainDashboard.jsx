@@ -75,15 +75,14 @@ import React, { useState } from 'react';
                 iconBgClass="bg-primary/20"
                 label="Total Accounts"
                 value={accounts?.length || 0}
-              />
+/>
               
               <StatCard
                 iconName="Clock"
                 iconBgClass="bg-secondary/20"
                 label="Active Codes"
-                value={accounts?.length || 0} {/* This is a placeholder, actual active codes depend on codes state */}
+                value={accounts?.length || 0}
               />
-              
               <StatCard
                 iconName="Zap"
                 iconBgClass="bg-accent/20"
